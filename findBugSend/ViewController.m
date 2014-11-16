@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "AppDelegate.h"
 
 @interface ViewController ()
 
@@ -22,6 +23,12 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)send:(id)sender {
+    [AppDelegate sendEmail];
+    
+    NSArray *list=@[@"1"];
+    //NSLog(@"%@",list[1]);
 }
 
 @end
